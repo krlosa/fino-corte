@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+:root {
+	--fonte-principal:  'Playfair Display', serif;
+	--cor-principal: black;
+	--cor-hover: #E3CCAE;
+	--cor-ativa: #FEF2F4
+}
+
+.menu {
+	background: #706f6f;
+}
+
+.menu__cabecalho {
+	position: relative;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.menu__cabecalho__logo {
+	width: 20%;
+}
+
+.links {
+	position: absolute;
+    top: 50%;
+    right: 10%;
+}
+
+.links__lista {
+	display: flex;
+	gap: 7%;
+}
+
+.links__lista__menu {
+	text-transform: uppercase;
+	color: var(--cor-principal);
+	font-weight: bold;
+	font-size: 150%;
+	text-decoration: none;
+	font-family: var(--fonte-principal);
+}
+
+.links__lista__menu:hover {
+	color: var(--cor-hover);
+	text-decoration: underline;
+}
+
+.produtos {
+	width: 81%;
+	margin: 0 auto;
+	padding: 10% 0;
+	font-family: var(--fonte-principal);
+}
+
+.produtos__lista {
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0 1.5%;
+	padding: 2% 2%;
+	box-sizing: border-box;
+	border: 3px solid var(--cor-principal);
+	border-radius: 10px;
+	
+}
+
+.produtos__lista:hover {
+	color: var(--cor-hover);
+	font-size: 40px;
+	border: 2px solid #4F4557
+}
+
+.produtos__lista__titulo {
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.produtos__lista__titulo:hover {
+	color: var(--cor-hover);
+	font-size: 34px;
+}
+
+.descrição {
+	font-size: 18px;
+}
+
+.preço {
+	font-weight: bold;
+	font-size: 22px;
+	margin-top: 2%;
+}
+
+.produtos li:active {
+	color: var(--cor-ativa);
+}
+
+.rodape {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 0.5% 0;
+}
+
+.rodape__logo {
+	width: 15%;
+}
+
+.copyright {
+	color: white;
+	font-size: 13px;
+	margin: 1% 0;
+}
+
+
+@media screen and (max-width: 1200px) {
+	.links__lista__menu {
+		font-size: 300%;
+	}
+	
+	.produtos {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.produtos__lista {
+		margin-left: 30%;
+	}
+
+	.produtos__lista__imagem {
+		width: 100%;
+	}
+}
