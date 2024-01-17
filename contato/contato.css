@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+:root {
+	--fonte-principal:  'Playfair Display', serif;
+	--cor-principal: black;
+	--cor-hover: #E3CCAE;
+	--cor-ativa: #FEF2F4;
+}
+
+
+.menu {
+	background: #706f6f;
+}
+
+.menu__cabecalho {
+	position: relative;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.menu__cabecalho__logo {
+	width: 20%;
+}
+
+.links {
+	position: absolute;
+    top: 50%;
+    right: 10%;
+}
+
+.links__lista {
+	display: flex;
+	gap: 7%;
+}
+
+.links__lista__menu {
+	text-transform: uppercase;
+	color: var(--cor-principal);
+	font-weight: bold;
+	font-size: 150%;
+	text-decoration: none;
+	font-family: var(--fonte-principal);
+}
+
+.links__lista__menu:hover {
+	color: var(--cor-hover);
+	text-decoration: underline;
+}
+
+.dados {
+	width: 90%;
+	margin: 0 auto;
+}
+
+.dados__formulario {
+	margin: 5% 0;
+}
+
+.dados__formulario__texto {
+	display: block;
+	font-size: 150%;
+	margin: 0 0 1.5%;
+}
+
+.dados__formulario__resposta {
+	display: block;
+	margin: 0 0 2%;
+	padding: 1.2% 2.4%;
+	width: 50%;
+}
+
+.horario__atendimento {
+	margin-bottom: 1.5%;
+}
+
+.horario__atendimento__opcoes {
+	font-size: 156%;
+}
+
+.botao-cadastro {
+	width: 40%;
+	padding: 1.5% 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+.botao-cadastro:hover {
+	background-color: darkorange;
+	transform: scale(1.2);
+}
+
+.quadro {
+	margin: 2.4% 0 4.8%;
+	width: 30%
+}
+
+.quadro__cabecalho {
+	background: #555555;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 8% 12.5%;
+}
+
+.quadro__conteudo {
+	border: 1px solid #000000;
+	padding: 8% 12.5%;
+}
+
+.rodape {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 0.5% 0;
+}
+
+.rodape__logo {
+	width: 15%;
+}
+
+.copyright {
+	color: white;
+	font-size: 13px;
+	margin: 1% 0;
+}
+
+@media screen and (max-width: 1200px) {
+	.links__lista__menu {
+		font-size: 300%;
+	}
+	
+	.dados__formulario__texto {
+		font-size: 300%;
+	}
+
+	.dados__formulario__resposta {
+		font-size: 200%;
+		border: solid;
+	} 
+
+	.horario__atendimento__opcoes {
+		font-size: 300%;
+	}
+}

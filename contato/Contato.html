@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Contatos - Barbearia Fino Corte</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="contato.css">
+</head>
+<body>
+	<header class="menu">
+		<div class="menu__cabecalho">
+			<h1><img class="menu__cabecalho__logo" src="logo.png" alt="Logo da Barbearia Fino Corte"></h1>
+		
+			<nav class="links">
+				<ul class="links__lista">
+					<li><a class="links__lista__menu" href="C:\Users\User\Desktop\projetos\Fino Corte\apresentação\barbearia.html">Home</a></li>
+					<li><a class="links__lista__menu" href="produtos.html">Produtos</a></li>
+					<li><a class="links__lista__menu" href="contato.html">Contatos</a></li>
+				</ul>
+			</nav>
+		</div>	
+	</header>
+
+	<main class="dados">
+		<form class="dados__formulario">
+			<label class="dados__formulario__texto" for="nomesobrenome">Nome e sobrenome</label>
+			<input type="text" id="nomesobrenome"class="dados__formulario__resposta" required placeholder="Seu nome">
+
+			<label class="dados__formulario__texto" for="email">E-mail</label>
+			<input type="email" id="email" class="dados__formulario__resposta" required placeholder="exemplo@email.com">
+
+			<label class="dados__formulario__texto" for="telefone">Telefone</label>
+			<input type="tel" id="telefone" class="dados__formulario__resposta" required placeholder="(xx)xxxxx-xxxx">
+
+			<label class="dados__formulario__texto" for="mensagem">Deixe aqui sua mensagem:</label>
+			<textarea cols="70" rows="10" id="mensagem" class="dados__formulario__resposta" required></textarea>
+
+			
+			<fieldset>
+				<legend class="dados__formulario__texto">Como prefere nosso contato?</legend>
+
+				<label class="dados__formulario__texto" for="opção1"><input type="radio" name="contato" value="email" id="opção1">Email</label>
+
+				<label class="dados__formulario__texto" for="opção2"><input type="radio" name="contato" value="telefone" id="opção2">Telefone</label>
+				
+				<label class="dados__formulario__texto" for="opção3"><input type="radio" name="contato" value="whatsapp" id="opção3" checked>Whatsapp</label>
+			</fieldset>
+
+			<fieldset class="horario__atendimento">
+				<legend class="dados__formulario__texto">Qual melhor horário para agendarmos?</legend>
+				<select class="horario__atendimento__opcoes">
+				<option>Manhã</option>
+				<option>Tarde</option>
+				<option>Noite</option>
+				</select>
+			</fieldset>
+			
+			<label class="dados__formulario__texto" for="novidades" class="checkbox"><input type="checkbox" checked>Gostaria de receber avisos de promoções?</label>
+
+
+			<input type="submit" name="contato" value="Fazer cadastro" class="botao-cadastro">
+		</form>	
+
+		<table class="quadro">
+			<thead class="quadro__cabecalho">	
+				<tr>
+					<th class="quadro__conteudo">Dia</th>
+					<th class="quadro__conteudo">Horário</th>
+				</tr>
+			</thead>	
+			<tbody>
+				<tr>
+					<td class="quadro__conteudo">Segunda</td>
+					<td class="quadro__conteudo">8h ~ 20h</td>
+				</tr>
+				<tr>
+					<td class="quadro__conteudo">Quarta</td>
+					<td class="quadro__conteudo">8h ~ 20h</td>
+				</tr>
+				<tr>
+					<td class="quadro__conteudo">Sexta</td>
+					<td class="quadro__conteudo">8h ~ 20h</td>
+				</tr>
+			</tbody>	
+		</table>	
+
+	</main>
+
+	<footer class="rodape">
+		<img class="rodape__logo" src="logo.png" alt="Logo da Barbearia Fino Corte">
+		<p class="copyright">&copy; Copyright Barbearia Fino Corte - 2023</p>
+	</footer>
+</body>
+</html>
